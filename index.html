@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hafiz AbuBakar — Unity 3D Game Developer</title>
+  <meta name="description" content="Hafiz AbuBakar is a Unity 3D game developer at Logic Rack Inc., building driving, simulation and action games for mobile.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2307080d'/><path d='M32 10 52 21.5v23L32 56 12 44.5v-23z' fill='none' stroke='%233ee6c4' stroke-width='4'/><path d='M32 10v46M12 21.5l40 23M52 21.5l-40 23' stroke='%238b5cf6' stroke-width='2'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="brand">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 54 19v26L32 58 10 45V19z" fill="none" stroke="currentColor" stroke-width="4"/><path d="M32 6v52M10 19l44 26M54 19 10 45" stroke="var(--violet)" stroke-width="2.5"/></svg>
+      <span>AbuBakar<b>.dev</b></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#games">Games</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <canvas id="scene" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <p class="eyebrow mono"><span class="dot"></span> Available for new projects</p>
+        <h1>
+          <span class="hi">Hi, I'm</span>
+          <span class="name">Hafiz AbuBakar</span>
+        </h1>
+        <p class="role mono">&gt; Unity 3D Game Developer<span class="caret">_</span></p>
+        <p class="lede">I build fast, fun and polished mobile games — driving simulators, police chases, flight sims and open-world action — powered by Unity and C#.</p>
+        <div class="hero-actions">
+          <a href="#games" class="btn btn-primary">View My Games
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong data-count="8">0</strong><span>Games on Play Store</span></li>
+          <li><strong>Dec '24</strong><span>Logic Rack Inc.</span></li>
+          <li><strong>BS</strong><span>Data Science</span></li>
+        </ul>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="kicker mono">01 // About</p>
+          <h2>Turning ideas into <em>playable</em> worlds.</h2>
+        </div>
+        <div class="reveal about-text">
+          <p>I'm a Unity 3D game developer at <strong>Logic Rack Inc.</strong>, where I've been shipping mobile games since December 2024. My work spans vehicle simulators, police and action games, flight sims and mechanic games — titles played by players across the Google Play Store.</p>
+          <p>With a degree in <strong>Data Science</strong> from The Islamia University of Bahawalpur, I bring an analytical mindset to game development: tuning gameplay, profiling performance and building systems that are clean, scalable and fun to play.</p>
+          <div class="chips">
+            <span>Gameplay Programming</span><span>Vehicle Physics</span><span>Mobile Optimization</span><span>Level Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="reveal">
+          <p class="kicker mono">02 // Experience</p>
+          <h2>Where I work</h2>
+        </div>
+        <div class="timeline">
+          <article class="job reveal">
+            <div class="job-marker"><span></span></div>
+            <div class="job-card">
+              <div class="job-head">
+                <div>
+                  <h3>Unity 3D Game Developer</h3>
+                  <p class="company">Logic Rack Inc.</p>
+                </div>
+                <span class="badge mono"><i class="live"></i> Dec 2024 — Present</span>
+              </div>
+              <ul class="job-list">
+                <li>Develop and publish 3D mobile games for Android using Unity and C#, from prototype to Play Store release.</li>
+                <li>Build core gameplay systems: vehicle controllers, traffic & police AI, mission flow, camera rigs and in-game UI.</li>
+                <li>Optimize builds for a wide range of devices — draw calls, lighting, LODs and memory — to keep frame rates smooth.</li>
+                <li>Integrate ads, analytics and in-app purchases, and iterate on levels and features based on player feedback.</li>
+              </ul>
+              <div class="tags mono"><span>Unity</span><span>C#</span><span>Android</span><span>3D Simulation</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="reveal">
+          <p class="kicker mono">03 // Skills</p>
+          <h2>Toolkit</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M12 2 21 7v10l-9 5-9-5V7z"/><path d="M12 22V12M21 7l-9 5-9-5"/></svg></div>
+            <h3>Game Engine</h3>
+            <p>Unity 3D, Prefabs & Scenes, Physics, Animator, Timeline, Particle Systems, URP</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="m8 6-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/></svg></div>
+            <h3>Programming</h3>
+            <p>C#, Object-Oriented Design, Gameplay Scripting, Python, Debugging & Profiling</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon"><svg viewBox="0 0 24 24"><circle cx="7" cy="17" r="2.5"/><circle cx="17" cy="17" r="2.5"/><path d="M4.5 17H3v-5l2-5h10l4 5h2v5h-1.5M9.5 17h5M5 12h14"/></svg></div>
+            <h3>Gameplay Systems</h3>
+            <p>Vehicle Controllers, AI & NavMesh, Waypoint Traffic, Missions, Camera Systems</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
+            <h3>Mobile</h3>
+            <p>Android Builds, Performance Optimization, Touch Controls, Ads & IAP, Google Play Console</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></div>
+            <h3>Data & Analytics</h3>
+            <p>Data Science background, Player Analytics, Data-driven Balancing & Tuning</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h12"/></svg></div>
+            <h3>Workflow</h3>
+            <p>Git Version Control, UI/UX for Games, Level Design, Team Collaboration</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAMES -->
+    <section class="section" id="games">
+      <div class="container">
+        <div class="games-head reveal">
+          <div>
+            <p class="kicker mono">04 // Portfolio</p>
+            <h2>Games I've worked on</h2>
+          </div>
+          <div class="filters mono" role="tablist" aria-label="Filter games">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="driving">Driving</button>
+            <button data-filter="police">Police</button>
+            <button data-filter="sim">Simulation</button>
+          </div>
+        </div>
+        <div class="games-grid" id="gamesGrid"></div>
+        <div class="dev-link reveal">
+          <a href="https://play.google.com/store/apps/dev?id=5539699950161266097&hl=en" target="_blank" rel="noopener" class="btn btn-ghost">
+            <svg viewBox="0 0 24 24" class="play"><path d="M4 3.5v17l9-8.5z" fill="currentColor" stroke="none"/><path d="M4 3.5 17 9.5l-4 3z M4 20.5l13-6-4-2z" fill="currentColor" stroke="none" opacity=".6"/></svg>
+            See the full developer page on Google Play
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="reveal">
+          <p class="kicker mono">05 // Education</p>
+          <h2>Academic background</h2>
+        </div>
+        <article class="edu-card reveal">
+          <div class="edu-icon"><svg viewBox="0 0 24 24"><path d="M2 9 12 4l10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6"/></svg></div>
+          <div class="edu-body">
+            <h3>BS Data Science</h3>
+            <p>The Islamia University of Bahawalpur</p>
+          </div>
+          <span class="badge mono">2020 — 2024</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <p class="kicker mono">06 // Contact</p>
+          <h2>Let's build your next game.</h2>
+          <p class="contact-lede">Have a project, a job opportunity or just want to talk games? I'd love to hear from you.</p>
+          <div class="contact-grid">
+            <a class="contact-item" href="mailto:hafizabubakarc@gmail.com">
+              <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span><small>Email</small>hafizabubakarc@gmail.com</span>
+            </a>
+            <a class="contact-item" href="https://wa.me/923022663661" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3.5 20.5l1.4-4.2a8.5 8.5 0 1 1 15.6-4.7z"/><path d="M9 9c0 3 2.5 5.8 6 6l1-1.5-2-1-1 .8c-1-.5-1.8-1.3-2.3-2.3l.8-1-1-2z"/></svg>
+              <span><small>WhatsApp</small>0302-2663661</span>
+            </a>
+            <a class="contact-item" href="tel:+923022663661">
+              <svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>
+              <span><small>Phone</small>0302-2663661</span>
+            </a>
+            <a class="contact-item" href="https://www.linkedin.com/in/hafiz-muhammad-abu-bakar-chishti-494573370" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+              <span><small>LinkedIn</small>Hafiz Muhammad Abu Bakar Chishti</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Hafiz AbuBakar. Built with passion for games.</p>
+      <a href="#top" class="mono">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
